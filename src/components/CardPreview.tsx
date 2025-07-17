@@ -51,7 +51,7 @@ export const CardPreview = forwardRef<HTMLDivElement, CardPreviewProps>(
       <div className="flex justify-center">
         <div
           ref={ref}
-          className="w-80 h-[440px] bg-gradient-to-b from-yellow-200 via-white to-yellow-100 rounded-2xl shadow-2xl border-4 border-yellow-400 relative overflow-hidden"
+          className="w-80 h-[440px] bg-gradient-to-b from-blue-200 via-white to-blue-100 rounded-2xl shadow-2xl border-4 border-yellow-400 relative overflow-hidden"
           style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
         >
           {/* Header */}

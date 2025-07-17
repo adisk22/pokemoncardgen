@@ -109,9 +109,7 @@ export const PokemonCardGenerator = () => {
           <h1 className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-yellow-500 mb-4">
             Pokémon Card Creator
           </h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Transform your photos into custom Pokémon trading cards! Upload an image, customize your Pokémon, and download your unique card.
-          </p>
+          
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 items-start">
@@ -119,26 +117,19 @@ export const PokemonCardGenerator = () => {
           <div className="space-y-6">
             <div className="bg-white rounded-xl shadow-lg p-6 border-2 border-yellow-200">
               <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
-                📸 Upload Your Image
+                Upload Your Image
               </h2>
               <ImageUpload onImageUpload={handleImageUpload} currentImage={cardData.image} />
             </div>
 
             <div className="bg-white rounded-xl shadow-lg p-6 border-2 border-blue-200">
               <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
-                ⚡ Customize Your Pokémon
+                 Customize Your Pokémon
               </h2>
               <CardForm cardData={cardData} onChange={handleFormChange} />
               
               <div className="mt-4 pt-4 border-t border-gray-200">
-                <Button
-                  onClick={generateRandomStats}
-                  variant="outline"
-                  className="w-full border-yellow-300 hover:bg-yellow-50 text-yellow-700"
-                >
-                  <Shuffle className="w-4 h-4 mr-2" />
-                  Generate Random Stats
-                </Button>
+                
               </div>
             </div>
           </div>
@@ -147,7 +138,7 @@ export const PokemonCardGenerator = () => {
           <div className="space-y-6">
             <div className="bg-white rounded-xl shadow-lg p-6 border-2 border-yellow-200">
               <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">
-                🎴 Card Preview
+                 Card Preview
               </h2>
               <CardPreview ref={cardRef} cardData={cardData} />
               
